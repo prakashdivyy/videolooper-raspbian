@@ -10,7 +10,7 @@ USB_FILES=/mnt/usbdisk/ # Variable for usb mount point
 CURRENT=0 # Number of videos in the folder
 SERVICE='omxplayer' # The program to play the videos
 PLAYING=0 # Video that is currently playing
-FILE_FORMATS='.mov|.mp4|.mpg'
+FILE_FORMATS='.mov|.mp4|.mpg|.mkv'
 
 getvids () # Since I want this to run in a loop, it should be a function
 {
