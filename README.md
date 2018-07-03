@@ -10,10 +10,6 @@ The script will look for videos either in:
 * a usb stick plugged in before startup (this will not be remounted if you pull it out and plug it back in)
 
 # Installation
-
-## Grab 'n Go
-Copy the [prebuilt img](http://timschwartz.org/downloads/2016-05-10-raspbian-jessie-lite-video-looper.img.zip) to a micro SD card using [these instructions](https://www.raspberrypi.org/documentation/installation/installing-images/). The img was setup using the steps below and `2016-05-10-raspbian-jessie-lite` was used as the base raspbian image.
-
 ## Roll Your Own
 Start with a [raspbian img](https://www.raspberrypi.org/downloads/raspbian/), install it on the pi, and follow the steps below to install the videolooper.
 
@@ -42,11 +38,13 @@ chmod uga+rwx startvideo.sh
 ### Add startvideo.sh to .bashrc so it auto starts on login
 `echo \"/home/pi/startvideo.sh" | tee -a /home/pi/.bashrc`
 
-## #Make system autoboot into pi user
+### Make system autoboot into pi user
 `sudo raspi-config`
 * Select option: "3 Boot Options"
+* Select option: "B1 Desktop / CLI"
 * Select option: "B2 Console Autologin"
 
 ### Expand your root partition if you want to
 `sudo raspi-config`
-* Select option: "1 Expand Filesystem"
+* Select option: "7 Advanced Options"
+* Select option: "A1 Expand Filesystem"
