@@ -36,7 +36,7 @@ chmod uga+rwx startvideo.sh
 ```
 
 ### Add startvideo.sh to .bashrc so it auto starts on login
-`echo \"/home/pi/startvideo.sh" | tee -a /home/pi/.bashrc`
+`echo "/home/pi/startvideo.sh" | tee -a /home/pi/.bashrc`
 
 ### Make system autoboot into pi user
 `sudo raspi-config`
